@@ -1,0 +1,82 @@
+.hello{
+    position: fixed;
+    height: auto;
+  top: 165px;
+  width: 80px;
+}
+
+body {
+    background-color: radial-gradient(circle at 20% 20%, 0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.form-container {
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+.login-button {
+    background-color: green;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: lightgreen;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px lightblue;
+}
+
+.login-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 10px lightblue;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
